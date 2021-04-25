@@ -53,8 +53,8 @@ plt.show()
 
 #%%
 # Picking Out a Range
-light_orange = (1, 90, 190)
-dark_orange = (18, 255, 255)
+light_orange = (1, 180, 125)
+dark_orange = (19, 255, 255)
 
 # Threshold the clownfish
 mask = cv2.inRange(hsv_fish, light_orange, dark_orange)
@@ -71,8 +71,8 @@ plt.show()
 
 #%%
 # Getting the white/blue colours as well
-light_white = (0, 0, 200)
-dark_white = (145, 60, 255)
+light_white = (0, 0, 180)
+dark_white = (145, 45, 255)
 
 mask_white = cv2.inRange(hsv_fish, light_white, dark_white)
 result_white = cv2.bitwise_and(fish, fish, mask=mask_white)
