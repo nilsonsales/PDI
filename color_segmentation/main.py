@@ -53,8 +53,8 @@ plt.show()
 
 #%%
 # Picking Out a Range
-light_orange = (1, 180, 125)
-dark_orange = (19, 255, 255)
+light_orange = (1, 200, 125)
+dark_orange = (22, 255, 255)
 
 # Threshold the clownfish
 mask = cv2.inRange(hsv_fish, light_orange, dark_orange)
